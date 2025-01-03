@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewaluka</title>
+    <meta name="keywords" content="Jewaluka,Digital Content Support,Creative Support Services,Global Business Development,Digital Transformation Support">
+    <meta name="description" content="We continue to grow with our clients and create new value. As your partner, Jewaluka is committed to pioneering a future filled with unlimited potential, moving forward together with you.">
+    <meta property="fb:app_id" content="">
+    <meta property="fb:admins" content="">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:title" content="Jewaluka">
+    <meta property="og:description" content="We continue to grow with our clients and create new value. As your partner, Jewaluka is committed to pioneering a future filled with unlimited potential, moving forward together with you.">
+    <meta property="og:image" content="images/logo2.png">
+    <meta property="og:image:width" content="450"/>
+    <meta property="og:image:height" content="298"/>
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: #141414;
+            font-family: 'Noto Sans';
+        }
+        img {
+            max-width: 100%;
+        }
+        .navbar-custom {
+            background: #fff;/* rgba(0, 0, 0, 0.15); */
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 99;
+        }
+        .dark-section {
+            background-color: #000;
+            color: #fff;
+        }
+        .dark-section a {
+            color: #fff;
+        }
+        .nav-item .nav-link {
+            color: #141414;
+            font-size: 21px;
+            font-weight: 400;
+        }
+        .navbar-brand {
+            width: 200px;
+        }
+        .hero-section {
+            background: linear-gradient(to bottom, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.35) 100%), url('images/banner.jpg') no-repeat center top;
+            background-size: cover;
+            height: 100vh;
+            max-height: 673px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #141414;
+            text-align: center;
+        }
+        .hero-section .container {
+            padding: 0 100px;
+            text-align: left;
+        }
+        .hero-section h1 {
+            font-size: 97px;
+            font-weight: 700;
+            margin: 60px 0 30px;
+        }
+        .hero-section p.lead {
+            font-size: 27px;
+            line-height: 37px;
+            font-weight: 700;
+            max-width: 80%;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .mission-section {
+            padding-top: 0;
+        }
+        .mission-section .mission-logo{
+            max-width: 169px;
+            width: 100%;
+        }
+        .mission-section  h2 {
+            font-size: 67px;
+            font-weight: 700;
+        }
+        .mission-container img {
+            max-width: 100%;
+        }
+        .mission-container .mission-detail {
+            padding: 10px 20px;
+            text-align: left;
+            position: relative;
+            font-size: 19px;
+            line-height: 26px;
+        }
+        .mission-container .mission-detail > p:first-child {
+            font-size: 27px;
+            line-height: 37px;
+            font-weight: 400;
+        }
+        .mission-container .mission-detail h4 {
+            font-weight: 700;
+            font-size: 21px;
+            margin-top: 30px;
+        }
+        .services-section {
+            color: #fff;
+            text-align: left;
+        }
+        .services-section img {
+            max-width: 100%;
+        }
+        .services-section h2 {
+            font-size: 56px;
+            line-height: 72px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        .services-section h3 {
+            font-size: 35px;
+            line-height: 48px;
+        }
+        .services-section .service-item {
+            font-size: 19px;
+            margin-bottom: 50px;
+            padding-left: 30px;
+        }
+        .services-section .service-item:last-child {
+            margin-bottom: 0;
+        }
+        .philosophy-section {
+            font-size: 19px;
+            line-height: 26px;
+            color: #141414;
+        }
+        .philosophy-section h2 {
+            font-size: 56px;
+            line-height: 72px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        .philosophy-image {
+            margin-top: 40px;
+            position: relative;
+        }
+        .philosophy-image span {
+            display: block;
+            margin: 0;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            font-size: 21px;
+            font-weight: 700;
+        }
+        .promise-section {
+            color: #fff;
+            background-color: #000;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url('images/promise-bg.jpg') no-repeat center center;
+        }
+        .promise-section h2 {
+            font-size: 56px;
+            line-height: 78px;
+            font-weight: 700;
+        }
+        .promise-section .container > p {
+            font-size: 21px;
+        }
+        .promise-item {
+            margin-top: 60px;
+        }
+        .promise-item h4 {
+            font-size: 35px;
+            font-weight: 700;
+        }
+        .promise-item p {
+            font-size: 19px;
+            font-weight: 400;
+        }
+        .info-section {
+            font-size: 21px;
+        }
+        .info-section h2 {
+            font-size: 56px;
+            line-height: 72px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .info-item {
+            margin-bottom: 30px;
+            padding-left: 30px;
+        }
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 992px) {
+            .hero-section .container {
+                padding: 0;
+            }
+            .hero-section p.lead {
+                max-width: 100%;
+            }
+            .services-section .service-item {
+                padding-left: 0;
+            }
+            .philosophy-image {
+                margin-top: 10px;
+                margin-bottom: 50px;
+            }
+            .philosophy-image:last-child {
+                margin-bottom: 0;
+            }
+            .info-item {
+                padding-left: 0;
+                margin-top: 30px;
+                margin-bottom: 0;
+            }
+            .info-section iframe {
+                height: 300px !important;
+            }
+        }
+        @media (max-width: 500px) {
+            .hero-section {
+                padding: 0 20px;
+            }
+            .hero-section h1 {
+                font-size: 60px;
+                line-height: 150%;
+            }
+            .hero-section p.lead {
+                font-size: 21px;
+                line-height: 150%;
+            }
+            .navbar-custom {
+                background: #fff;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
+                        <a class="nav-link" href="#mission">Our Mission</a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="300">
+                        <a class="nav-link" href="#services">Our Business</a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
+                        <a class="nav-link" href="#philosophy">Philosophy</a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="500">
+                        <a class="nav-link" href="#company">Company</a>
+                    </li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-delay="600">
+                        <a class="nav-link btn btn-dark text-white" href="#company" style="padding-right: 34px; padding-left: 34px; border-radius: 40px;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold" data-aos="fade-up" data-aos-delay="0">Jewaluka</h1>
+            <p class="lead" id="typing"></p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section mission-section">
+        <div class="container text-center">
+            <img src="images/mission.png" class="mission-logo"  data-aos="fade-up" data-aos-delay="900"/>   
+            <h2>Our Mission</h2>
+            <div class="mission-container container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img src="images/our-name.jpg"/>
+                    </div>
+                    <div class="col-lg-7 mission-detail">
+                        <p>Our mission is to maximize the potential of Japanese content and support its global success.</p>
+                        <h4>Origin of Our Name</h4>
+                        <p style="margin-bottom: 0;">The name Jewaluka embodies our philosophy and mission.</p>
+                        <p style="margin-bottom: 0;">Jewaluka is a compound word created from three elements:</p>
+                        <ul style="margin-bottom: 0;">
+                            <li>"J" - representing Japan</li>
+                            <li>"ewalu" - Hawaiian word meaning 8 (infinity)</li>
+                            <li>"kōkua" - Hawaiian word meaning to help, assist, and cooperate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Services Section -->
+    <section id="services" class="section services-section bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Our <br/> Business Services</h2>
+                    <img src="images/our-service.jpg"/>
+                    <p>*All services can be customized to meet our clients' specific needs.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-item">
+                        <h3>01 Digital Content Support</h3>
+                        <p>
+                            - Global expansion support for Japanese digital content<br/>
+                            - Global marketing strategy planning and execution <br/>
+                            - Multilingual content localization
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>02 Creative Support Services</h3>
+                        <p>
+                            - Content production and planning support<br/>
+                            - Creator and production company matching<br/>
+                            - Intellectual property management and utilization consulting
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>03 Global Business Development</h3>
+                        <p>
+                            - International market research and analysis<br/>
+                            - International business partnership development<br/>
+                            - Cross-border E-commerce expansion support
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>04 Digital Transformation Support</h3>
+                        <p>
+                            - International market research and analysis<br/>
+                            - International business partnership development<br/>
+                            - Cross-border E-commerce expansion support
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="section philosophy-section">
+        <div class="container">
+            <h2>Corporate Philosophy</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>Like the number 8 turned sideways to form ∞, we strive for limitless growth</p>
+                    <div class="philosophy-image">
+                        <img src="images/philosophy1.jpg"/>
+                        <span>Infinite Possibilities</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p>We grow together through collaborative relationships with our clients</p>
+                    <div class="philosophy-image">
+                        <img src="images/philosophy2.jpg"/>
+                        <span>Mutual Development</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p>We fully support Japanese content in reaching global audiences</p>
+                    <div class="philosophy-image">
+                        <img src="images/philosophy3.jpg"/>
+                        <span>Global Expansion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promise Section -->
+    <section class="section promise-section">
+        <div class="container">
+            <h2>Our Promise</h2>
+            <p>Jewaluka walks alongside our clients in pursuit of unlimited possibilities. We value the following principles:</p>
+            <div class="row">
+                <div class="col-lg-4 promise-item">
+                    <h4>Innovation</h4>
+                    <p>We constantly pursue new possibilities.</p>
+                </div>
+                <div class="col-lg-4 promise-item">
+                    <h4>Cooperation</h4>
+                    <p>We emphasize mutual understanding and collaboration.</p>
+                </div>
+                <div class="col-lg-4 promise-item">
+                    <h4>Growth Mindset</h4>
+                    <p>We aim for continuous evolution and development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Information Section -->
+    <section id="company" class="section info-section dark-section">
+        <div class="container">
+            <h2>Company Information</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <iframe src="https://maps.google.com/maps?q=Roppongi%20Hills&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <span style="font-size: 17px; display: block; margin-top: 10px; font-style: italic;">Our office is conveniently located in the heart of Tokyo's business district, in the prestigious Roppongi Hills Mori Tower.</span>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info-item">
+                        <strong>Company Name: Jewaluka Inc.</strong><br/>
+                        CEO: Shigehiro Yabuuchi
+                    </div>
+                    <div class="info-item">
+                        <strong>Address:</strong><br/>
+                        Roppongi Hills Mori Tower 16F 6-10-1<br/>Roppongi, Minato-ku Tokyo 106-6116,<br/>Japan
+                    </div>
+                    <div class="info-item">
+                        <strong>Japan Phone/Fax:</strong><br/>+81-3-6772-3723
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="dark-section py-3">
+        <p class="container" style="font-size: 19px; font-style: italic;">Copyright &copy; Jewaluka Inc. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Thời gian thực hiện hiệu ứng (ms)
+            delay: 200      // Độ trễ giữa các hiệu ứng (ms)
+        });
+
+        const typewriter = new Typewriter('#typing', {
+            loop: false,
+            delay: 25,
+            delete_speed: 1999
+        });
+
+        typewriter
+            .typeString('We continue to grow with our clients and create new value. As your partner, Jewaluka is committed to pioneering a future filled with unlimited potential, moving forward together with you.')
+            .start();
+                
+            $(document).ready(function() {
+                $('#navbarNav .nav-link').on('click', function() {
+                    $('#navbarNav').removeClass('show');
+                });
+                $('.navbar-brand').on('click', function() {
+                    $('#navbarNav').removeClass('show');
+                });
+            });
+    </script>
+</body>
+</html>
